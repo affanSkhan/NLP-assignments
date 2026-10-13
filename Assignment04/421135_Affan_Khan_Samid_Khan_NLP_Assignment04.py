@@ -98,9 +98,15 @@ def run_evaluation(wv, test_path: Path, output_dir: Path, topn: int = 5):
     for idx, row in enumerate(test_cases, 1):
         res = predict_country(row["capital_1"], row["country_1"], row["capital_2"], wv, topn=topn)
         expected = normalize_token(row["expected_country"])
-        if res["status"] != "OK":
+        status = res["status"]
+        if status != "OK":
             skipped += 1
             predicted, is_correct = "OOV", "NOT_EVALUATED"
+        elif expected not in wv.key_to_index:
+            # Do not score an example if the gold answer cannot be represented.
+            skipped += 1
+            predicted, is_correct = res["predicted_country"], "NOT_EVALUATED"
+            status = "SKIPPED_OOV_GOLD"
         else:
             predicted = res["predicted_country"]
             is_correct = predicted == expected
@@ -112,7 +118,7 @@ def run_evaluation(wv, test_path: Path, output_dir: Path, topn: int = 5):
             "capital_2": row["capital_2"], "expected_country": row["expected_country"],
             "predicted_country": predicted,
             "top1_cosine_similarity": top[0]["cosine_similarity"] if top else "",
-            "correct": is_correct, "status": res["status"], "missing_inputs": ",".join(res["missing_inputs"])
+            "correct": is_correct, "status": status, "missing_inputs": ",".join(res["missing_inputs"])
         })
         for rank, cand in enumerate(top, 1):
             ranked_rows.append({
@@ -134,6 +140,9 @@ def run_evaluation(wv, test_path: Path, output_dir: Path, topn: int = 5):
     }
     write_csv(output_dir / "predictions.csv", prediction_rows)
     write_csv(output_dir / "ranked_candidates.csv", ranked_rows)
+    skipped_rows = [r for r in prediction_rows if str(r["status"]).startswith("SKIPPED")]
+    write_csv(output_dir / "skipped_oov_examples.csv", skipped_rows,
+              fieldnames=list(prediction_rows[0]) if prediction_rows else ["example_id", "status"])
     (output_dir / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
     lines = [
         "NLP Assignment 04 - Country Prediction using Word Embeddings",
