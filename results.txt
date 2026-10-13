@@ -1,0 +1,26 @@
+NLP Laboratory Assignment 01 - Bigrams and Sentence Probability
+Student: Affan Khan Samid Khan | Roll No. 421135 | PRN 22310588
+
+Corpus sentences: 10
+Unique word types excluding boundary markers: 24
+Distinct observed bigrams: 44
+Laplace smoothing vocabulary size: V = 25 (24 word types plus </s>)
+
+Test 1: I love natural language processing.
+Unsmoothed probability: 0.0285714285714
+Laplace-smoothed probability: 2.52776497044e-06
+
+Test 2: Natural language models learn patterns.
+Unsmoothed probability: 0.0107142857143
+Laplace-smoothed probability: 7.2592224792e-07
+
+Test 3: I study machine learning.
+Unsmoothed probability: 0.0333333333333
+Laplace-smoothed probability: 1.11703137741e-05
+
+Zero-frequency demonstration:
+The unseen bigram (we, code) has count 0 and MLE probability 0.
+With add-one smoothing, P(code | we) = (0 + 1) / (0 + 25) = 0.04.
+
+Interpretation:
+An unseen bigram forces a sentence's unsmoothed probability to zero if it appears in that sentence. Add-one smoothing assigns a non-zero value to unseen events. Since the corpus is small and manually authored, these are demonstration results rather than general language-model estimates.
