@@ -1,0 +1,13 @@
+{
+  "test_sentences": 17,
+  "test_tokens": 100,
+  "correct_tokens": 89,
+  "accuracy": 0.89,
+  "macro_precision": 0.8684077380952381,
+  "macro_recall": 0.8948317307692307,
+  "macro_f1": 0.8743507819794585,
+  "majority_baseline_accuracy": 0.26,
+  "majority_tag": "NOUN",
+  "word_majority_baseline_accuracy": 0.92,
+  "tags": ["ADJ", "ADV", "AUX", "DET", "NOUN", "PRON", "PUNCT", "VERB"]
+}
