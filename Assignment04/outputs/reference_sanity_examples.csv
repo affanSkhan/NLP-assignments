@@ -1,0 +1,4 @@
+query_orientation,published_top_candidate,published_cosine_similarity,reference_expected,source_note
+capital_1 - country_1 + country_2,Tokyo,0.92,Tokyo,Public GloVe educational notebook example; not independently reproduced here
+capital_1 - country_1 + country_2,Rome,0.87,Rome,Public GloVe educational notebook example; not independently reproduced here
+capital_1 - country_1 + country_2,amorim,0.71,Brazil,Public GloVe educational notebook example shows a miss; not part of the 20-case evaluation
