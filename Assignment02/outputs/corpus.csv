@@ -1,0 +1,25 @@
+language,sentence_id,sentence
+English,1,Natural language processing helps computers understand human language.
+English,2,Students use Python to analyze text and discover patterns.
+English,3,Machine learning models can classify documents and summarize information.
+English,4,Tokenization divides text into smaller linguistic units.
+English,5,Stop words are common words that may carry little task-specific information.
+English,6,Stemming reduces related words to approximate root forms.
+English,7,"Language tools must handle spelling, punctuation, and ambiguity."
+English,8,Researchers compare systems using reliable evaluation measures.
+Hindi,1,प्राकृतिक भाषा प्रसंस्करण कंप्यूटर को मानव भाषा समझने में मदद करता है।
+Hindi,2,विद्यार्थी पाठ का विश्लेषण करने के लिए Python का उपयोग करते हैं।
+Hindi,3,मशीन लर्निंग मॉडल दस्तावेज़ों का वर्गीकरण कर सकते हैं।
+Hindi,4,शब्दों का टोकनीकरण पाठ को छोटे हिस्सों में बाँटता है।
+Hindi,5,सामान्य शब्दों को हटाने से कभी-कभी उपयोगी अर्थ भी खो सकता है।
+Hindi,6,भाषा के अनुसार शब्दों के रूप और वाक्य की रचना बदलती है।
+Hindi,7,शोधकर्ता परिणामों की तुलना करने के लिए मापदंडों का उपयोग करते हैं।
+Hindi,8,अच्छे डेटा से मॉडल बेहतर सीख सकते हैं।
+Marathi,1,नैसर्गिक भाषा प्रक्रिया संगणकांना मानवी भाषा समजण्यास मदत करते.
+Marathi,2,विद्यार्थी मजकूर तपासण्यासाठी पायथनचा वापर करतात.
+Marathi,3,मशीन लर्निंग मॉडेल दस्तऐवजांचे वर्गीकरण करू शकतात.
+Marathi,4,शब्दांचे टोकनीकरण मजकूर लहान भागांत विभागते.
+Marathi,5,सामान्य शब्द काढल्याने काही वेळा महत्त्वाचा अर्थही हरवू शकतो.
+Marathi,6,भाषेनुसार शब्दांचे रूप आणि वाक्यरचना बदलते.
+Marathi,7,संशोधक परिणामांची तुलना करण्यासाठी मापदंड वापरतात.
+Marathi,8,चांगल्या डेटामुळे मॉडेल अधिक चांगले शिकू शकतात.
