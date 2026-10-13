@@ -13,8 +13,10 @@ This folder contains Assignment 02: a reproducible NLP preprocessing pipeline fo
 - `421135_Affan_Khan_Samid_Khan_NLP_Assignment02.ipynb` - Jupyter notebook.
 - `requirements.txt` - environment dependencies.
 - `outputs/corpus.csv` - the 24 sentence samples.
+- `outputs/processing_outputs.csv` - normalized text, tokens, removed stop words, filtered tokens, and stemming outputs per sentence.
 - `outputs/comparative_results.csv` - summary statistics.
-- `outputs/top_word_frequencies.csv` - top word-frequency results per language.
+- `outputs/word_frequencies.csv` - complete ranked token frequency table.
+- `outputs/top_word_frequencies.csv` - compact top-five frequency summary per language.
 - `outputs/results.txt` - concise output summary.
 
 ## Pipeline
