@@ -1,0 +1,18 @@
+sentence_id,sentence,gold_tags,predicted_tags,correct_tokens,total_tokens,accuracy,errors
+1,The teacher reads a book .,DET NOUN VERB DET NOUN PUNCT,DET NOUN VERB DET NOUN PUNCT,6,6,1.0,None
+2,A small dog runs quickly .,DET ADJ NOUN VERB ADV PUNCT,DET ADJ NOUN VERB ADV PUNCT,6,6,1.0,None
+3,The researcher analyzes useful data .,DET NOUN VERB ADJ NOUN PUNCT,DET NOUN VERB ADJ NOUN PUNCT,6,6,1.0,None
+4,They can solve the problem .,PRON AUX VERB DET NOUN PUNCT,PRON AUX VERB DET NOUN PUNCT,6,6,1.0,None
+5,Our team tests the software .,DET NOUN VERB DET NOUN PUNCT,DET NOUN VERB DET NOUN PUNCT,6,6,1.0,None
+6,The model produces reliable results .,DET NOUN VERB ADJ NOUN PUNCT,DET NOUN VERB ADJ NOUN PUNCT,6,6,1.0,None
+7,A bright child reads the newspaper .,DET ADJ NOUN VERB DET NOUN PUNCT,DET ADJ NOUN VERB DET NOUN PUNCT,7,7,1.0,None
+8,The engineer fixed several bugs yesterday .,DET NOUN VERB DET NOUN ADV PUNCT,DET NOUN VERB DET NOUN ADV PUNCT,7,7,1.0,None
+9,I will deploy new software tomorrow .,PRON AUX VERB ADJ NOUN ADV PUNCT,PRON AUX VERB ADJ NOUN ADV PUNCT,7,7,1.0,None
+10,The intelligent agent searches relevant information .,DET ADJ NOUN VERB ADJ NOUN PUNCT,DET ADJ NOUN VERB ADJ NOUN PUNCT,7,7,1.0,None
+11,This method improves the accuracy .,DET NOUN VERB DET NOUN PUNCT,DET NOUN VERB DET NOUN PUNCT,6,6,1.0,None
+12,We have completed the task .,PRON AUX VERB DET NOUN PUNCT,PRON AUX VERB DET NOUN PUNCT,6,6,1.0,None
+13,The book is interesting .,DET NOUN AUX ADJ PUNCT,DET NOUN AUX VERB PUNCT,4,5,0.8,"interesting: predicted VERB, gold ADJ"
+14,Students present the results .,NOUN VERB DET NOUN PUNCT,DET NOUN DET NOUN PUNCT,3,5,0.6,"Students: predicted DET, gold NOUN; present: predicted NOUN, gold VERB"
+15,They light candles .,PRON VERB NOUN PUNCT,PRON AUX VERB PUNCT,2,4,0.5,"light: predicted AUX, gold VERB; candles: predicted VERB, gold NOUN"
+16,The running water is cold .,DET ADJ NOUN AUX ADJ PUNCT,DET NOUN VERB DET NOUN PUNCT,2,6,0.3333333333333333,"running: predicted NOUN, gold ADJ; water: predicted VERB, gold NOUN; is: predicted DET, gold AUX; cold: predicted NOUN, gold ADJ"
+17,Running improves health .,VERB VERB NOUN PUNCT,PRON VERB ADV PUNCT,2,4,0.5,"Running: predicted PRON, gold VERB; health: predicted ADV, gold NOUN"
