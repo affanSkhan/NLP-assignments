@@ -1,0 +1,14 @@
+NLP Assignment 02 - Fundamental Language Processing for Three Languages
+Student: Affan Khan Samid Khan | Roll No.: 421135 | PRN: 22310588
+Corpus: 8 author-created sentences per language; 24 total.
+Tokenizer: Unicode NFC, case-folding, Latin/Devanagari regex; punctuation omitted.
+Stop-word lists: compact teaching lists, not comprehensive resources.
+Stemming: NLTK Snowball for English; not applied to Hindi/Marathi without validated stemmers.
+Additional task: word-frequency analysis.
+
+English: sentences=8; tokens=68; unique=59; stopwords_removed=13; remaining=55
+  Top tokens: language (3), words (3), text (2), information (2), natural (1)
+Hindi: sentences=8; tokens=88; unique=58; stopwords_removed=37; remaining=51
+  Top tokens: भाषा (3), शब्दों (3), पाठ (2), करने (2), उपयोग (2)
+Marathi: sentences=8; tokens=56; unique=51; stopwords_removed=6; remaining=50
+  Top tokens: भाषा (2), मजकूर (2), मॉडेल (2), शब्दांचे (2), नैसर्गिक (1)
