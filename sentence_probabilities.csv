@@ -1,0 +1,4 @@
+Test sentence,Unsmoothed probability,Laplace-smoothed probability
+"I love natural language processing.",0.0285714285714,2.52776497044e-06
+"Natural language models learn patterns.",0.0107142857143,7.2592224792e-07
+"I study machine learning.",0.0333333333333,1.11703137741e-05
