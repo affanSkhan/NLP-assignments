@@ -1,0 +1,4 @@
+language,sentences,tokens,unique_tokens,stopwords_removed,tokens_after_stopword_removal,stemming_or_lemmatization,additional_task
+English,8,68,59,13,55,NLTK SnowballStemmer (English),Word-frequency analysis
+Hindi,8,88,58,37,51,Not applied: no validated Hindi/Marathi stemmer configured,Word-frequency analysis
+Marathi,8,56,51,6,50,Not applied: no validated Hindi/Marathi stemmer configured,Word-frequency analysis
