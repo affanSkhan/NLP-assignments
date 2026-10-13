@@ -1,0 +1,14 @@
+NLP Assignment 03 - HMM POS Tagging with Viterbi
+Student: Affan Khan Samid Khan | Roll No.: 421135 | PRN: 22310588
+Training sentences: 48
+Held-out test sentences: 17
+Held-out tokens: 100
+HMM/Viterbi accuracy: 0.8900 (89/100)
+Macro precision: 0.8684
+Macro recall: 0.8948
+Macro F1: 0.8744
+Global majority-tag baseline: 0.2600 (always NOUN)
+Word-majority baseline: 0.9200
+Tagset: ADJ, ADV, AUX, DET, NOUN, PRON, PUNCT, VERB
+Model: first-order supervised HMM; alpha=0.1 smoothing; suffix/shape signatures for unseen words.
+Caveat: scores describe a small manually annotated classroom corpus, not benchmark performance.
