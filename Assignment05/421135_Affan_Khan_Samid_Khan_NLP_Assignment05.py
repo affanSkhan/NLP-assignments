@@ -95,7 +95,7 @@ def run(outdir="outputs",cap=None):
     confusion_matrix(y,lr_pred,labels=LABELS)
     pd.DataFrame(confusion_matrix(y,lr_pred,labels=LABELS),index=LABELS,columns=LABELS).to_csv(out/"confusion_matrix_logreg.csv")
     pd.DataFrame(confusion_matrix(y,vd_pred,labels=["negative","positive","neutral"]),index=["negative","positive","neutral"],columns=["negative","positive","neutral"]).to_csv(out/"confusion_matrix_vader.csv")
-    train[["record_id","label"]].assign(split="train")._append(test[["record_id","label"]].assign(split="test")).sort_values("record_id").to_csv(out/"split_manifest.csv",index=False)
+    pd.concat([train[["record_id","label"]].assign(split="train"), test[["record_id","label"]].assign(split="test")], ignore_index=True).sort_values("record_id").to_csv(out/"split_manifest.csv",index=False)
     joblib.dump(model,out/"tfidf_logistic_regression.joblib")
     result={"dataset":meta,"train_records":len(train),"test_records":len(test),
        "test_size":0.2,"random_state":42,"tfidf":{"ngrams":[1,2],"min_df":2,"max_features":30000},
