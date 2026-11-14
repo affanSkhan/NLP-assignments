@@ -15,6 +15,7 @@ This repository organizes the Natural Language Processing laboratory assignments
 | 02 | Fundamental Language Processing for Three Languages (English, Hindi, Marathi) | [Assignment02 folder](https://github.com/affanSkhan/NLP-assignments/tree/main/Assignment02) |
 | 03 | Survey and Implementation of POS Tagging (HMM + Viterbi) | [Assignment03 folder](https://github.com/affanSkhan/NLP-assignments/tree/main/Assignment03) |
 | 04 | Country Prediction using Word Embeddings (GloVe + cosine similarity) | [Assignment04 folder](https://github.com/affanSkhan/NLP-assignments/tree/main/Assignment04) |
+| 05 | Sentiment Analysis and Mini Project (TF-IDF + Logistic Regression; VADER paper method) | [Assignment05 folder](https://github.com/affanSkhan/NLP-assignments/tree/main/Assignment05) |
 
 ## Assignment 04 quick start
 
